@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética Automotiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="produtos.html">Produtos e Serviços</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo à Estética Automotiva</h1>
+        <p>Aqui cuidamos do seu veículo com qualidade e segurança.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Descrição da estética automotiva e seus serviços.</p>
+    </section>
+
+    <section id="agendamento">
+        <h2>Agendamento</h2>
+        <p>Formulário de agendamento de serviços.</p>
+        <form action="processa_agendamento.php" method="POST">
+            <!-- Campos do formulário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <!-- Outros campos conforme necessário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos e Serviços</h2>
+        <p>Lista de produtos e serviços oferecidos pela estética automotiva.</p>
+    </section>
+
+    <section id="cadastro">
+        <h2>Cadastre-se</h2>
+        <p>Formulário de cadastro para novos clientes.</p>
+        <form action="processa_cadastro.php" method="POST">
+            <!-- Campos do formulário -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- Outros campos conforme necessário -->
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Estética Automotiva. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
